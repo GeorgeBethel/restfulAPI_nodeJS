@@ -1,0 +1,5 @@
+ways to clean up your codes:
+
+   seperate your routes into folders and then inject the endpoints into the server.js using app.use()
+   seperate your controllers (functions or program logic) into folders and inject them into the routes file
+   create environment variables file

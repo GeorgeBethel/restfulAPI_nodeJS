@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-// inject the controllers or API logic into the routes file
+// inject the controllers or API logic into the routes file. This is more like importing the modules
 
 const {
     getGoals,
@@ -15,4 +15,4 @@ router.route('/').get(getGoals).post(setGoal)
 router.route('/:id').delete(deleteGoal).put(updateGoal)
 
 
-module.exports = router
+module.exports = router  // exporting the modules so it becomes available to other parts of the code

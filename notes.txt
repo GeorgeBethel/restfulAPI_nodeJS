@@ -3,3 +3,109 @@ ways to clean up your codes:
    seperate your routes into folders and then inject the endpoints into the server.js using app.use()
    seperate your controllers (functions or program logic) into folders and inject them into the routes file
    create environment variables file
+   
+   
+different ways to create functions in nodejs
+
+
+ ---> Standard declaration
+ 
+ function functionName(parameters) {
+  // Function body
+}
+
+
+example:  
+
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+--> Named function expression
+
+const functionName = function(parameters) {
+  // Function body
+};
+
+example:
+
+const greet = function(name) {
+  return `Hello, ${name}!`;
+};
+
+
+--> Arrow function expression
+
+const functionName = (parameters) => {
+  // Function body
+};
+
+
+example:
+
+const greet = (name) => {
+  return `Hello, ${name}!`;
+};
+
+
+--> Shorter Arrow Function (Implicit Return)
+
+const functionName = (parameters) => /* Single Expression */;
+
+example:
+
+const double = (x) => x * 2;
+
+
+
+----------------------------- ARRAYS ----------------------------------
+
+
+
+// Creating an array of numbers
+let numbers = [1, 2, 3, 4, 5];
+
+// Creating an array of strings
+let fruits = ['apple', 'banana', 'orange'];
+
+// Creating an array with mixed data types
+let mixedArray = [1, 'hello', true, null];
+
+
+Accessing elements:
+
+console.log(numbers[0]); // Output: 1
+console.log(fruits[1]);  // Output: banana
+
+Modifying elements:
+
+numbers[2] = 10;       // Modifies the third element to 10
+fruits.push('grapes'); // Adds 'grapes' to the end of the 'fruits' array
+
+Array methods:
+
+Array Methods:
+Arrays in JavaScript have numerous built-in methods for manipulation such as push(), pop(), shift(), unshift(), splice(), slice(), concat(), etc.
+
+---------------------------------- Dictionaries --------------------------
+
+let person = {
+    name: 'John',
+    age: 30,
+    city: 'New York'
+};
+
+// Accessing object properties
+console.log(person.name); // Output: John
+console.log(person['age']); // Output: 30
+
+Modiffying object property:
+
+person.age = 35;          // Modifies the 'age' property
+person['city'] = 'Paris'; // Modifies the 'city' property
+
+
+Adding new property:
+
+person.job = 'Engineer'; // Adds a new 'job' property
+
